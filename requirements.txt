@@ -1,0 +1,3 @@
+pip install funcy
+pip install dpkt
+pip install colorama

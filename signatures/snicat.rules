@@ -1,0 +1,1 @@
+alert tls $HOME_NET any -> $EXTERNAL_NET any (msg: "SNIcat - Detected C2 commands"; flow: to_server,established; tls.sni; pcre: "/^(LIST|LS|SIZE|LD|CB|CD|EX|ALIVE|EXIT|finito)-[A-Za-z0-9]{16}\./"; threshold: type threshold, track by_src, count 5, seconds 300; sid: 1; rev: 1;)
