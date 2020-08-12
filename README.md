@@ -25,7 +25,7 @@ We discovered a new stealthy method of data exfiltration that specifically bypas
 
 By using our exfiltration method SNIcat, we found that we can bypass a security perimeter solution performing TLS inspection, even when the Command & Control (C2) domain we use is blocked by common reputation and threat prevention features built into the security solutions themselves. In short, we found that solutions designed to protect users, introduced them to a new vulnerability.
 
-We have also provided a [Suricata signature](snicat.rules) for detecting this specific tool.
+We have also provided a [Suricata signature](/signatures/snicat.rules) for detecting this specific tool.
 
 ## Installation
 
