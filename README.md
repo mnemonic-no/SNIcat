@@ -21,7 +21,7 @@ SNIcat might not work with products and software versions that we haven’t test
 
 ## Background and Scenario
 
-We discovered a new stealthy method of data exfiltration that specifically bypasses security perimeter solutions such as web proxies, next generation firewalls (NGFW), and dedicated solutions for TLS interception and inspection. Our testing validates that this is a widespread issue that affects different types of security solutions as well as solutions from a variety of vendors. We successfully tested our technique against products from F5 Networks, Palo Alto Networks and Fortinet, and speculate that many other vendors also are susceptible. 
+We discovered a new stealthy method of data exfiltration that specifically bypasses security perimeter solutions such as web proxies, next generation firewalls (NGFW), and dedicated solutions for TLS interception and inspection. Our testing validates that this is a widespread issue that affects different types of security solutions as well as solutions from a variety of vendors. We successfully tested our technique against products from Cisco, F5 Networks, Palo Alto Networks and Fortinet, and speculate that many other vendors also are susceptible. 
 
 By using our exfiltration method SNIcat, we found that we can bypass a security perimeter solution performing TLS inspection, even when the Command & Control (C2) domain we use is blocked by common reputation and threat prevention features built into the security solutions themselves. In short, we found that solutions designed to protect users, introduced them to a new vulnerability.
 
